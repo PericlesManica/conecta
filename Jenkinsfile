@@ -8,9 +8,7 @@ pipeline {
             }
         }
 
-
-
-        stage('Sonar') {
+       stage('Sonar') {
             steps {
                 script {
                     // Comandos para analise do sonar

@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Bean;
 @Configuration
 public class RabbitMQcfg {
 
-
     @Bean
     public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
         return new RabbitAdmin(connectionFactory);
@@ -36,5 +35,4 @@ public class RabbitMQcfg {
             RabbitAdmin rabbitAdmin) {
         return event -> rabbitAdmin.initialize();
     }
-
 }

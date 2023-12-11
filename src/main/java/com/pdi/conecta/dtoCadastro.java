@@ -26,8 +26,4 @@ public class dtoCadastro {
     public void setName(String name) {
         this.name = name;
     }
-
-
-
-
 }

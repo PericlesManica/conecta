@@ -9,5 +9,4 @@ public class ConectaApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConectaApplication.class, args);
     }
-
 }
