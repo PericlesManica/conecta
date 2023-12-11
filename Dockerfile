@@ -5,7 +5,7 @@ FROM openjdk:8
 WORKDIR /usr/src/app
 
 # Copie o arquivo JAR da aplicação para o contêiner
-COPY target/notificacao-0.0.1-SNAPSHOT.jar .
+COPY target/conecta-0.0.1-SNAPSHOT.jar .
 
 # Exponha a porta que a aplicação vai usar (se necessário)
 EXPOSE 8083
