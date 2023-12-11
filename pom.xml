@@ -11,8 +11,8 @@
     <groupId>com.pdi</groupId>
     <artifactId>conecta</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>notificacao</name>
-    <description>Projeto de notificacao PDI</description>
+    <name>conecta</name>
+    <description>Projeto de conecta PDI</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

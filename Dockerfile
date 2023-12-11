@@ -11,4 +11,4 @@ COPY target/notificacao-0.0.1-SNAPSHOT.jar .
 EXPOSE 8083
 
 # Comando para iniciar a aplicação quando o contêiner for iniciado
-CMD ["java", "-jar", "notificacao-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "conecta-0.0.1-SNAPSHOT.jar"]
