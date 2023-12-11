@@ -11,7 +11,7 @@ pipeline {
         stage('Build Maven') {
             steps {
                 script {
-                    // Comando mvn do Windows, ajustar o caminho conforme necessário
+                    // Use o comando mvn do Windows, ajuste o caminho conforme necessário
                     bat 'mvn clean package'
                 }
             }
@@ -34,12 +34,14 @@ pipeline {
             bat 'docker rm listener-api 2>NUL || exit 0'   // Suprime a mensagem de erro se o contêiner não existir
         }
 
-        // Executa o contêiner com a nova imagem no Docker host
+        // Executar o contêiner com a nova imagem no Docker host
         script {
             bat 'docker run -d -p 8083:8083 --name listener-api listener-api:latest'
         }
     }
 }
+
+    }
 
     post {
         success {
